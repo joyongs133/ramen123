@@ -10,7 +10,12 @@
     <script defer src="script.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4872196290853086"
      crossorigin="anonymous"></script>
-</head>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCbm9yMQ4goXSieAyOu2y2RgpFPpCFLZo"></script>
+     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCbm9yMQ4goXSieAyOu2y2RgpFPpCFLZo&callback=initMap"></script>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCbm9yMQ4goXSieAyOu2y2RgpFPpCFLZo&callback=initMap" async defer></script>
+    </head>
 <body>
     <h1>List of Ramen Websites</h1>
     <header>
@@ -118,6 +123,33 @@
           <button id="button-equals">=</button>
           <button id="button-divide">/</button>
         </div>
+      </div>
+
+      <section class="ramenMaps">
+        <h3>Map of Ramen Restaurant in Tokyo, Japan</h3>
+        <div id="map"></div>
+
+        <h3>Ramen Noodle in New York</h1>
+    <div id="mapNewYork"></div>
+      </section>
+
+      <section class="weather">
+        <h2>Current Weather in the US</h2>
+        <div class="weather-info">
+          <div class="city-name">City: <span id="city-name"></span></div>
+          <div class="temp">Temperature: <span id="temp"></span> °F</div>
+          <div class="humidity">Humidity: <span id="humidity"></span>%</div>
+          <div class="wind-speed">Wind Speed: <span id="wind-speed"></span> mph</div>
+          <div class="description">Description: <span id="description"></span></div>
+        </div>
+      </section>
+
+      <div class="weather-container">
+        <h2>Current Weather in the US</h2>
+        <p class="icon icon-cloudy"></p>
+        <p>Temperature: <span id="temp"></span></p>
+        <p>Humidity: <span id="humidity"></span></p>
+        <p>Weather: <span id="weather"></span></p>
       </div>
    
 </body>
