@@ -123,3 +123,13 @@ setInterval(getWeather, 10 * 60 * 1000);
       }
     });
   });
+
+  (function() {
+    var cx = '36205db6e6a53469b'; // replace with your own search engine ID
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
