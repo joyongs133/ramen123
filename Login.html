@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RAMEN LOGIN</title>
+	<style type="text/css">
+		body {
+			background-color: #FFEFD5;
+			font-family: Arial;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+			font-size: 40px;
+			color: #8B0000;
+			text-shadow: 2px 2px 2px #D3D3D3;
+		}
+		form {
+			margin: auto;
+			margin-top: 50px;
+			width: 300px;
+			text-align: center;
+			background-color: #F5DEB3;
+			border: 2px solid #8B0000;
+			padding: 20px;
+			border-radius: 10px;
+		}
+		label {
+			display: block;
+			margin-top: 20px;
+			font-size: 20px;
+			color: #8B0000;
+			font-weight: bold;
+			text-shadow: 1px 1px 1px #D3D3D3;
+		}
+		input[type="text"], input[type="password"] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: 2px solid #8B0000;
+			border-radius: 4px;
+		}
+		input[type="submit"] {
+			background-color: #8B0000;
+			color: #fff;
+			padding: 14px 20px;
+			margin-top: 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: #D3D3D3;
+		}
+		.back-button {
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			font-size: 20px;
+			font-weight: bold;
+			color: #8B0000;
+			text-shadow: 1px 1px 1px #D3D3D3;
+			text-decoration: none;
+			cursor: pointer;
+		}
+		.back-button:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+  document.querySelector(".back-button").addEventListener("click", function() {
+    window.history.back();
+  });
+});
+</script>
+<body>
+	<a href="#" class="back-button">&lt; Back</a>
+	<h1>RAMEN LOGIN</h1>
+	<form>
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username">
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password">
+		<input type="submit" value="Login">
+	</form>
+</body>
+</html>

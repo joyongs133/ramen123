@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+       <script>
+        const id = "joyong133";
+const password = "dlqmdldlfma789";
+
+const loginBtn = document.querySelector(".login-btn");
+loginBtn.addEventListener("click", () => {
+  const inputId = document.querySelector("#id").value;
+  const inputPassword = document.querySelector("#password").value;
+
+  if (inputId === id && inputPassword === password) {
+    alert("Login successful!");
+    window.location.href = "previous_screen.html";
+  } else {
+    alert("Invalid ID or password.");
+  }
+});
+    </script>
+</head>
+<body>
+
+    <style>
+        body {
+  background-color: #F2F2F2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #BBBBBB;
+  padding: 30px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.title {
+  font-size: 28px;
+  margin: 0 0 20px 0;
+}
+
+.input-box {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid #BBBBBB;
+  font-size: 16px;
+  padding: 5px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.login-btn {
+  background-color: #5B5B5B;
+  border: none;
+  border-radius: 25px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #414141;
+}
+
+    </style><div class="container"></div>
+       <div class="login-box">
+      <h1 class="title">RAMEN LOGIN</h1>
+      <div class="input-box">
+        <label for="id">ID:</label>
+        <input type="text" id="id" placeholder="Enter your ID">
+      </div>
+      <div class="input-box">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password">
+      </div>
+      <button class="login-btn">Login</button>
+    </div>
+  </div> 
+</body>
+</html>
